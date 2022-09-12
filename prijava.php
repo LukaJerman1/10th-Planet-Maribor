@@ -1,0 +1,92 @@
+
+<?php include('./php/validacija.php');?>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <title>10th Planet Maribor</title>
+</head>
+
+<body class="bg-dark">
+
+  <div class="navigacijska">
+  <?php include('./php/menu.php'); ?>
+  </div>
+
+  <div class="container-1">
+    <div class="box-1">
+      <img src="./logo.png" alt="10th planet logo">
+    </div>
+  </div>
+
+
+
+  <!-- 
+    <div class="box-2">
+      <img src="./10th-planet-maribor-20.jpg" alt="10th planet sparring">
+
+    </div>
+    <div class="box-3">
+      <img src="./next_to_logo.png" alt="10th planet sparring">
+    </div>
+    <div class="box-4">
+      <img src="./10th-planet-maribor-31.jpg" alt="10th planet sparring">
+    </div>
+  -->
+
+  
+
+  <div class="zunanji-registracija-form">
+
+
+    <div class="registracija-form">
+
+      <form method="POST" action="./prijava.php">
+
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="emailP" name="emailPrijava"><br><br>
+
+        <label for="geslo">Geslo:</label>
+        <input type="password" id="gesloP" name="gesloPrijava" ><br><br>
+
+
+        <input class="submit-button" name="login_user" type="submit" value="Prijava">
+      </form>
+
+      <p>Še niste registrirani? <a href="./registracija.php">Registriraj se!</a></p>
+
+    </div>
+
+
+    <div class="sporocilo">
+      <?php include('./php/errors.php');?>
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <div class="pageFooter">
+
+    <?php
+      include('./php/footer.php');
+    ?>
+    </div>
+  </div>
+
+
+  <script src="js.js"></script>
+
+</body>
+
+</html>
